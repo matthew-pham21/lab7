@@ -12,7 +12,7 @@ class ListExamples {
     List<String> result = new ArrayList<>();
     for(String s: list) {
       if(sc.checkString(s)) {
-        result.add(0, s);
+        result.add(s);
       }
     }
     return result;
@@ -31,7 +31,7 @@ class ListExamples {
       }
       else {
         result.add(list2.get(index2));
-        index2 += 1;
+        index1 += 1;
       }
     }
     while(index1 < list1.size()) {
